@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoTrack Pro | Industrial Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ECOTRACK <span style="color: var(--primary-green)">PRO</span></h1>
+        <div id="clima-container" class="clima-badge">Sincronizando sensores externos...</div>
+    </header>
+
+    <div class="grid-main">
+        <aside class="card">
+            <h3>⚙️ Gerenciar Ativo</h3>
+            <input type="text" id="nome" placeholder="Tag da Máquina (ex: CNC-01)">
+            <input type="text" id="setor" placeholder="Célula de Produção">
+            <button onclick="cadastrarAtivo()">REGISTRAR NO SISTEMA</button>
+            <hr style="border: 0.5px solid #333; margin: 20px 0;">
+            <canvas id="graficoEficiencia"></canvas> </aside>
+
+        <section id="ativos-container">
+            <h3>📊 Monitoramento em Tempo Real</h3>
+            <div id="ativos-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
