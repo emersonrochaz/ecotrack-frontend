@@ -53,6 +53,7 @@ Certifique-se de que a API Back-End está rodando na porta 5000.
 Na raiz deste repositório, execute:
 
 docker build -t ecotrack-front .
+
 docker run -d -p 80:80 --name front-container ecotrack-front
 
 Acesse em: http://localhost
